@@ -19,7 +19,7 @@ print(5 > 10)
 print(5 < 10)
 print(True)
 print(False)
-print(not True)
+print(not True) # not 은 not 다음에 오는 값의 반대를 말함
 print(not False)
 print(not (5 > 10))
 
