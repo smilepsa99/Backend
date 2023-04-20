@@ -15,7 +15,7 @@ print(4 >= 7) # False
 print(10 < 3) # False
 print(5 <= 5) # True
 
-print(3 == 3) # True(==은 양 옆의 값이 같다는 부호 / 같으면 True, 다르면 False)
+print(3 == 3) # True(==은 양 옆의 값이 같은지 비교하는 부호 / 같으면 True, 다르면 False)
 print(4 == 2) # False
 print(3 + 4 == 7) # True
 
