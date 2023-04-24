@@ -169,7 +169,7 @@ for num in range(1,51) :
     report_file.write("\n업무 요약 : ")
     report_file.close()
 
-# 답안2 (pickle 활용해서)
+# 답안2 (with 활용해서)
 for num in range(1,51) :
     with open(str(num) + "주차.txt", "w", encoding = "utf8") as report_file :
         report_file.write("- " + str(num) +"주차 주간보고 -")
@@ -177,7 +177,7 @@ for num in range(1,51) :
         report_file.write("\n이름 : ")
         report_file.write("\n업무 요약 : ")
 
-# 답안3 (pickle, .format() 활용해서)
+# 답안3 (with, .format() 활용해서)
 for num in range(1,51) :
     with open("{0}주차.txt".format(num), "w", encoding = "utf8") as report_file :
         report_file.write("- {0} 주차 주간보고 -".format(num))
