@@ -112,6 +112,7 @@ print("남은 총 : {0}".format(gun))
 
 # 퀴즈
 
+# 답안 1
 def std_weight (height, gender) :
     if gender == "남자" :
         return height**2 * 22
@@ -125,6 +126,7 @@ weight = std_weight(height,gender)
 print("키 {0}cm {1}의 표준 체중은 {2:.2f}kg 입니다.".format(int(height*100), gender, weight))
 
 
+# 답안 2
 def std_weight (height, gender) :
     if gender == "남자" :
         return height**2 * 22
@@ -136,8 +138,10 @@ gender = input("성별(남자/여자)를 입력해주세요 : ")
 weight = std_weight(height/100,gender)
 
 print("키 {0}cm {1}의 표준 체중은 {2:.2f}kg 입니다.".format(height, gender, weight))
+                                  # :.2f → 소수점 둘째자리까지 반올림해서 표시
 
 
+# 답안 3(선생님 답안)
 def std_weight (height, gender) :
     if gender == "남자" :
         return height**2 * 22
@@ -152,6 +156,6 @@ def std_weight (height, gender) :
 
 height = 175
 gender = "남자"
-weight = round(std_weight(height/100,gender), 2)
+weight = round(std_weight(height/100,gender), 2)  # round (숫자, 2) → 소수점 둘째자리까지 반올림해서 표시
 
 print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, weight))
